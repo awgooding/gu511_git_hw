@@ -48,7 +48,9 @@ def get_instance_info(dbid, profile_name=None):
     # id `dbid`. dont' forget to actually *use* that `dbid` value...
     # name it `dbinfodict` and return it below
     # ------------- #
-    dbinfodict = rds.describe_instances()
+    dbinfodict = rds.describe_db_instances()
+    #instances = rds.get_all_dbinstances()
+    #dbinfodict = rds.describe_instances()
     # ------------- #
 
     return dbinfodict
